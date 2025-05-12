@@ -1,16 +1,36 @@
-# ft_browser
+# Windowsデスクトップ向け Webブラウザアプリ（Flutter製）
 
-A new Flutter project.
+このアプリは、**Flutter**と**webview_windowsパッケージ**のみを使用して開発された、Windowsデスクトップ用の簡易Webブラウザです。
 
-## Getting Started
+## 🔍 特徴
 
-This project is a starting point for a Flutter application.
+- Flutter製のクロスプラットフォーム技術を活用（Windowsに対応）
+- Windows用WebView2（`webview_windows`）を用いてWebページを表示
+- 以下の基本機能を実装済み：
+  - URL入力によるページ遷移
+  - 戻る／進むボタン
+  - ページの再読み込み（リロード）
+  - `http`や`https`で始まらない入力はGoogle検索として処理
 
-A few resources to get you started if this is your first Flutter project:
+## 💡 制作の意図
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutterのデスクトップ対応とWebView技術を活用した実用的なアプリを開発することで、モダンなUI開発とプラットフォーム制御の両立を実現しました。特にWindows環境でのFlutter活用事例として、ポートフォリオに加えられる内容です。
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🔧 技術スタック
+
+- 開発言語: Dart
+- フレームワーク: Flutter
+- 使用パッケージ: `webview_windows`
+
+## 💻 動作環境
+
+- Windows 10以降（WebView2ランタイムが必要）
+- Flutter SDK（3.0以上推奨）
+
+## 📦 セットアップ方法
+
+```bash
+git clone https://github.com/pikapika1774/simpleWeb.git
+cd simpleWeb
+flutter pub get
+flutter run -d windows
